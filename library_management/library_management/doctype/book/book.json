@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-24 23:06:07.210499",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "book",
+  "author",
+  "isbn",
+  "category",
+  "rack_location",
+  "total_copies",
+  "available_copies"
+ ],
+ "fields": [
+  {
+   "fieldname": "book",
+   "fieldtype": "Data",
+   "label": "Book"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author"
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "\nFiction\nScience\nReference\nHistory\nTechnology"
+  },
+  {
+   "fieldname": "rack_location",
+   "fieldtype": "Data",
+   "label": "Rack Location"
+  },
+  {
+   "fieldname": "total_copies",
+   "fieldtype": "Int",
+   "label": "Total Copies"
+  },
+  {
+   "fieldname": "available_copies",
+   "fieldtype": "Int",
+   "label": "Available Copies"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-24 23:07:42.470226",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Book",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

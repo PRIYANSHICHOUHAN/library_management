@@ -1,41 +1,35 @@
-### Library Management
+# Library Managem
+ent System
 
- 
+Custom Frappe application developed as part of ERPNext Developer Assessment.
 
-### Installation
+## Features
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+- Book Catalog Management
+- Member Management
+- Book Issue & Return
+- Automatic Due Date Calculation
+- Fine Management
+- Accounting Integration
+- Reports & Dashboard
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app library_management
-```
+## Technology Stack
 
-### Contributing
+- Frappe Framework
+- ERPNext
+- MariaDB
+- Python
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+## Installation
 
-```bash
-cd apps/library_management
-pre-commit install
-```
+bench get-app <repository_url>
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+bench --site site1.local install-app library_management
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+## Workflow
 
-### CI
+Book → Issue Book → Return Book → Fine Calculation → Accounting Entry
 
-This app can use GitHub Actions for CI. The following workflows are configured:
+## Author
 
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
-
-
-### License
-
-mit
+Priyanshi Chouhan
