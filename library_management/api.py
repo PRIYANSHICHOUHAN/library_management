@@ -50,4 +50,42 @@ def return_book(issue):
 
         fine.insert()
 
+        # Send Email Notification
+        try:
+            member = frappe.get_doc(
+                "Library Member",
+                doc.member
+            )
+
+            if member.email:
+
+                frappe.sendmail(
+                    recipients=[member.email],
+                    subject="Library Overdue Fine Notification",
+                    message=f"""
+                    Dear {member.full_name},
+
+                    Your book has been returned late.
+
+                    Overdue Days: {overdue_days}
+                    Fine Amount: ₹{amount}
+
+                    Please pay the fine at the library desk.
+
+                    Regards,
+                    Library Team
+                    """
+                )
+
+        except Exception:
+            frappe.log_error(
+                frappe.get_traceback(),
+                "Library Email Notification Failed"
+            )
+
     frappe.db.commit()
+
+    return {
+        "status": "success",
+        "message": "Book Returned Successfully"
+    }
