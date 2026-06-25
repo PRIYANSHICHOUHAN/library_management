@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "PAY-.YYYY.-.#####",
  "creation": "2026-06-24 23:16:39.228125",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -37,10 +38,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-24 23:17:46.800166",
+ "modified": "2026-06-25 22:09:31.660112",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Fine Payment",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

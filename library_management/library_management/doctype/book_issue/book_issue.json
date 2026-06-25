@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "ISSUE-.YYYY.-.#####",
  "creation": "2026-06-24 23:10:01.802193",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -44,10 +45,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-24 23:11:48.472860",
+ "modified": "2026-06-25 22:08:46.962401",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book Issue",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
